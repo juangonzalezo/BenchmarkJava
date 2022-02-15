@@ -44,7 +44,7 @@ public class BenchmarkTest00032 extends HttpServlet {
         java.util.Map<String, String[]> map = request.getParameterMap();
         String param = "";
         if (!map.isEmpty()) {
-            String[] values = map.get("BenchmarkTest00032");
+            String[] values = map.get("BenchmarkTest00032"); //NOSONAR
             if (values != null) param = values[0];
         }
 
