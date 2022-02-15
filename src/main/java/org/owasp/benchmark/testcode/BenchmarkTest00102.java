@@ -56,6 +56,7 @@ public class BenchmarkTest00102 extends HttpServlet {
         if (theCookies != null) {
             for (javax.servlet.http.Cookie theCookie : theCookies) {
                 if (theCookie.getName().equals("BenchmarkTest00102")) {
+                    @SuppressWarnings({"java:S1118", "java:S3546"})
                     param = java.net.URLDecoder.decode(theCookie.getValue(), "UTF-8");
                     break;
                 }
